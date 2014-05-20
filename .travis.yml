@@ -20,3 +20,12 @@ script:
 notifications:
   webhooks:
     - https://idobata.io/hook/734651d8-05c0-403f-a385-c647960a2767
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: KjABIFEY+HRS4rCPH8TgEnQ4XrmLqxgYAt5A+2RDPiexo4y8elLjit2XjAbYE7kZzdD6wQ1JrLB/G9UYKYaDrW008ZpfIX32C9JJ7NBY7lqTsAlZ/N2V/QevNg7X2VNW+dF6Wj//TLLiq104usJ51YV3UCGY827awrpOLcaR8Xg=
+  app: laravel-table-admin
+  on:
+    repo: shin1x1/laravel-table-admin-example
+
