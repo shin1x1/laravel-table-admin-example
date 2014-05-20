@@ -21,4 +21,7 @@ deploy:
   provider: heroku
   api_key: lOVeK6I0Mr5ZGMluskilo6u5ziTvPAMa7FVFPZtjOwJ3pb69lHHKZyB1fgiRRbVNAyp6ImG9J+xtxqouk5mZqukJkW3J+pRHeWHc3M8bWItrQetkZs1ErxvaxDr4CEImMolFOD6TCgdlU3LKHPfLfyPPo+FiBHag7Pi//yzVax8=
   app: laravel-table-admin
+  run:
+    - "php artisan migrate"
+    - "php artisan db:seed"
 
