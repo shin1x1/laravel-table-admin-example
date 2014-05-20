@@ -6,13 +6,24 @@ php:
   - 5.6
 
 addons:
-  - postgresql: "9.3"
+  - postgresql: '9.3'
 
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
-  - createuser -Upostgres -d -A -S vagrant
+  - createuser -Upostgres -d -A -S -R vagrant
   - createdb -Uvagrant -E UTF-8 -T template0 app_test
 
 script:
   - ./vendor/bin/phpunit
+
+deploy:
+  api_key:
+    secure: S6TGFQQPQ45fnrjIQPBvWRqvzmm4EpFJMAgsVagsFnakPkzWmpseURaM6YKEmoGrlR7q2IEP5jZafu+jkxXwA1M1/mp5KrgEAsPrwBWI7z5dTF4K8nWolVCODBQI2bY912IxV3IjTT96/OFG6slUjPRdRTu35a0FGK7LlEpdeTY=
+  run:
+    - php artisan migrate
+    - php artisan db:seed
+
+notifications:
+  webhooks:
+    - https://idobata.io/hook/734651d8-05c0-403f-a385-c647960a2767
