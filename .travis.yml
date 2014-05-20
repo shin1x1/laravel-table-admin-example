@@ -17,13 +17,6 @@ before_script:
 script:
   - ./vendor/bin/phpunit
 
-deploy:
-  api_key:
-    secure: S6TGFQQPQ45fnrjIQPBvWRqvzmm4EpFJMAgsVagsFnakPkzWmpseURaM6YKEmoGrlR7q2IEP5jZafu+jkxXwA1M1/mp5KrgEAsPrwBWI7z5dTF4K8nWolVCODBQI2bY912IxV3IjTT96/OFG6slUjPRdRTu35a0FGK7LlEpdeTY=
-  run:
-    - php artisan migrate
-    - php artisan db:seed
-
 notifications:
   webhooks:
     - https://idobata.io/hook/734651d8-05c0-403f-a385-c647960a2767
