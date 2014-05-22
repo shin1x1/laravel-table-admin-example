@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
             [
                 'class_id' => 1,
                 'nationality_id' => 2,
-                'no' =>'48',
+                'no' =>'46',
                 'name' => 'Valentino',
             ],
         ])->each(function($v) {
