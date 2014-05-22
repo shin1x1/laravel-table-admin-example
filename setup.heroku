@@ -1,0 +1,11 @@
+#!/bin/sh
+heroku apps:create laravel-table-admin
+git remote add heroku git@heroku.com:laravel-table-admin.git
+
+heroku config:set LARAVEL_ENV=heroku
+heroku addons:add heroku-postgresql
+
+git push heroku master
+
+heroku run php /app/artisan migrate
+heroku run php /app/artisan db:seed
