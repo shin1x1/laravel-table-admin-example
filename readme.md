@@ -9,4 +9,3 @@ This repo is example for [Laravel Table Admin](https://github.com/shin1x1/larave
 
 * [heroku](http://laravel-table-admin.herokuapp.com/crud/classes)
 
-test
