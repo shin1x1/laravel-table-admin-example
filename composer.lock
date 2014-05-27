@@ -1603,12 +1603,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/shin1x1/laravel-table-admin.git",
-                "reference": "8eb61a61584c4c1a972bbd710d5b6dbfeb5aa1c4"
+                "reference": "3c3f0617708b77e4b0b1f74316d49c16c9bac3bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shin1x1/laravel-table-admin/zipball/8eb61a61584c4c1a972bbd710d5b6dbfeb5aa1c4",
-                "reference": "8eb61a61584c4c1a972bbd710d5b6dbfeb5aa1c4",
+                "url": "https://api.github.com/repos/shin1x1/laravel-table-admin/zipball/3c3f0617708b77e4b0b1f74316d49c16c9bac3bb",
+                "reference": "3c3f0617708b77e4b0b1f74316d49c16c9bac3bb",
                 "shasum": ""
             },
             "require": {
@@ -1646,7 +1646,7 @@
                 "database",
                 "laravel"
             ],
-            "time": "2014-05-24 11:53:18"
+            "time": "2014-05-27 14:16:14"
         },
         {
             "name": "stack/builder",

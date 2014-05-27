@@ -11,28 +11,12 @@
 |
 */
 
-use Shin1x1\LaravelTableAdmin\TableAdmin;
-
 Route::get('/', function () {
     return View::make('hello');
 });
 
-Route::group(Config::get(TableAdmin::PACKAGE_NAME . '::routing'), function() {
-    $tables = [
-        'classes',
-        'nationalities',
-        'riders',
-    ];
-    $parameters = [
-        'table' => '(' . implode('|', $tables) . ')',
-    ];
-
-    $controller = '\Shin1x1\LaravelTableAdmin\Controller\TableAdminController';
-    Route::get('{table}', $controller . '@index')->where($parameters);
-    Route::get('{table}/create', $controller . '@create')->where($parameters);
-    Route::post('{table}', $controller . '@store')->where($parameters);
-    Route::get('{table}/{id}', $controller . '@edit')->where($parameters);
-    Route::put('{table}/{id}', $controller . '@update')->where($parameters);
-    Route::delete('{table}/{id}', $controller . '@destroy')->where($parameters);
-});
-
+TableAdmin::route([
+    'classes',
+    'nationalities',
+    'riders',
+]);
