@@ -34,8 +34,10 @@
 </div>
 <div id="footer">
     <div class="container">
-        <p class="pull-right">Github: <a href="https://github.com/shin1x1/laravel-table-admin">Laravel-Table-Admin</a></p>
-        <p class="pull-right">Laravel: v<?= e(\Illuminate\Foundation\Application::VERSION) ?></p>
+        <p class="pull-right">
+          Github: <a href="https://github.com/shin1x1/laravel-table-admin">Laravel-Table-Admin</a><br>
+          Laravel: v<?= e(\Illuminate\Foundation\Application::VERSION) ?><br>
+        </p>
     </div>
 </div>
 </body>
