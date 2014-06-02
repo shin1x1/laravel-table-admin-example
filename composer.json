@@ -1,6 +1,6 @@
 {
     "require": {
-        "laravel/framework": "4.1.*",
+        "laravel/framework": "4.2.*",
         "codesleeve/asset-pipeline": "2.0.*",
         "shin1x1/laravel-table-admin": "0.1.*"
     },
