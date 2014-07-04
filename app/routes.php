@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return View::make('hello');
+    return Redirect::to('/crud/classes');
 });
 
 TableAdmin::route([
